@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header-bg {
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("/images/header-image.png");
+  object-fit: cover;
+  opacity: 1.9;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: start;
+  background-color: transparent;
+  gap: 45%
+}
+
+.netflix-logo{
+  width: 10%;
+  padding: 20px 150px;
+}
+
+.language-selector {
+  background: transparent;
+  border: 1px solid gray;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  height: 30px;
+  padding-top: 15px;
+  padding: 0px 30px;
+  text-align: center;
+}
+
+.english-lang {
+  color: white;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+  padding: 20px 
+}
+
+.sign-in-button {
+  border: none;
+  background-color: #e50914;
+  color: white;
+  padding: 8px 17px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.banner-content {
+  margin: 150px auto;
+  text-align: center;
+}
+
+.heading-price-desc {
+  padding-left: 10px;
+  color: white;
+}
+
+.banner-content-heading {
+  font-size: 52px;
+}
+
+.banner-content-price-heading {
+  font-size: 20px;
+}
+
+.banner-content-desc {
+  font-size: 16px;
+}
+
+.banner-content-signup {
+  display: flex;
+  justify-content: center;
+  gap: 8px
+}
+
+.email-input {
+  width: 350px;
+  height: 55px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  background-color: transparent;
+  font-size: 16px;
+  padding-left: 15px;
+  color: white;
+}
+
+.banner-content-button {
+  height: 55px;
+  border: none;
+  background-color: #e50914;
+  color: white;
+  padding: 12px 20px;
+  font-size: 26px;
+  border-radius: 5px;
+  padding-right: 25px;
+}
