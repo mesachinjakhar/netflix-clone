@@ -8,7 +8,7 @@ body {
   background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("/images/header-image.png");
   object-fit: cover;
   opacity: 1.9;
-  height: 100vh;
+  border-bottom: 2px solid gray;
 }
 
 .header {
@@ -24,20 +24,36 @@ body {
 }
 
 .language-selector {
+  display: flex;
   background: transparent;
   border: 1px solid gray;
   color: white;
   border-radius: 5px;
   font-size: 16px;
   height: 30px;
-  padding-top: 15px;
-  padding: 0px 30px;
   text-align: center;
+  gap:5px;
 }
 
 .english-lang {
   color: white;
   text-decoration: none;
+  padding-top: 6px;
+  padding-left: 3px;
+  padding-right:5px;
+}
+
+#lang-icon {
+  font-size: 14px;
+  padding-top: 8px;
+  padding-left: 10px;
+}
+
+#down-icon {
+  font-size: 9px;
+  padding-top: 12px;
+  padding-left: 0px;
+  padding-right: 15px;
 }
 
 .menu {
@@ -104,4 +120,143 @@ body {
   font-size: 26px;
   border-radius: 5px;
   padding-right: 25px;
+}
+
+.decs1 {
+  background-color: black;
+  display: flex;
+  color: white;
+  border-bottom: 3px solid gray;
+  height: 330px;
+  align-items: center;
+}
+
+.desc1-text {
+  width: 50%;
+  margin-left: 300px;
+}
+
+.decs1-image {
+  margin-right: 250px;
+}
+
+.tv-img {
+  width: 400px;
+}
+
+.decs2 {
+  background-color: black;
+  display: flex;
+  color: white;
+  border-bottom: 3px solid gray;
+  height: 330px;
+  align-items: center;
+}
+
+.desc2-text {
+  margin: 100px 50px;
+  margin-right: 270px;
+}
+
+.decs2-image {
+  margin-left: 250px;
+}
+
+.download-img {
+  margin-top: 25px;
+  width: 400px;
+}
+
+.faq-container {
+  margin: 0px auto;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-bottom: 3px solid gray;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.faq-item {
+  margin-left: 290px;
+  margin-right: 290px;
+  margin-bottom: 20px;
+  background-color: #333;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  cursor: pointer;
+  background-color: #444;
+}
+
+.faq-question:hover {
+  background-color: #555;
+}
+
+.faq-icon {
+  font-size: 1.5em;
+  transition: transform 0.3s ease;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background-color: #333;
+  padding: 0 15px;
+}
+
+.faq-answer p {
+  padding: 15px 0;
+  margin: 0;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 150px; /* Adjust based on content */
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(45deg); /* Change icon to 'x' when active */
+}
+
+.footer {
+  padding-left: 305px;
+  padding-top: 20px;
+  background-color: black;
+  color: #b1b1b1;
+}
+
+.footer-call {
+  font-size: 15px;
+}
+
+.footer-options {
+  margin-bottom: 50px;
+  padding-top: 35px;
+  display: flex;
+  gap: 150px
+}
+
+.footer-options .options a {
+  display: block; /* Ensure each link is on a new line */
+  color: #b1b1b1; /* Add this if you want the links to be white */
+  margin-bottom: 15px; /* Optional: adds space between the links */
+  font-size: 15px;
+}
+
+.footer-country {
+  color: #b1b1b1;
+  height: 100px;
 }

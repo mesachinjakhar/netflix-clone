@@ -2,15 +2,25 @@
     <head>
         <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
         <link rel="stylesheet" href="/stylesheets/home.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <script>
+            document.querySelectorAll('.faq-question').forEach(item => {
+    item.addEventListener('click', event => {
+        const faqItem = item.parentElement;
+        faqItem.classList.toggle('active');
+    });
+});
+        </script>
     </head>
-
     <body>
         <div class="header-bg">
             <div class="header">
                 <img class="netflix-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1597px-Netflix_2015_logo.svg.png?20190206123158" alt="">
                 <div class="menu">
                     <div class="language-selector">
+                        <i id="lang-icon" class="bi bi-translate"></i>
                         <a class="english-lang" href="#" onclick="changeLanguage('English')">English</a>
+                        <i id="down-icon" class="bi bi-caret-down-fill"></i>
                     </div>
                     <div class="sign-in">
                         <button class="sign-in-button">Sign In</button>
@@ -31,6 +41,122 @@
             </div>
 
         </div>
-        
+        <div class="decs1"> 
+            <div class="desc1-text">
+                <h1>Enjoy on your TV</h1>
+                <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray Players and more. </p>
+            </div>
+
+            <div class="decs1-image">
+                <img class="tv-img" src="/images/feature-1.png" alt="">
+            </div>
+        </div>
+
+        <div class="decs2"> 
+            <div class="decs2-image">
+                <img class="download-img" src="/images/feature-2.png" alt="">
+            </div>
+
+            <div class="desc2-text">
+                <h1>Download your shows to<br>watch offline</h1>
+                <p>Save your favourites easily and always have something to watch.</p>
+            </div>
+        </div>
+
+        <div class="decs1"> 
+            <div class="desc1-text">
+                <h1>Watch Everywhere</h1>
+                <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+            </div>
+
+            <div class="decs1-image">
+                <img class="tv-img" src="/images/feature-3.png" alt="">
+            </div>
+        </div>
+
+        <div class="decs2"> 
+            <div class="decs2-image">
+                <img class="download-img" src="/images/feature-4.png" alt="">
+            </div>
+
+            <div class="desc2-text">
+                <h1>Create profile for kids</h1>
+                <p>Send children on adventures with their favourite characters in a space made just for them-free with your membership.</p>
+            </div>
+        </div>
+
+        <div class="faq-container"> 
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What is Netflix</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Netflix is a streaming service...</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>How much does Netflix cost?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Netflix is a streaming service...</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What can I watch on Netflix?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Netflix is a streaming service...</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Where I can watch?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Netflix is a streaming service...</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <h1 class="footer-call">Questions? Call 000-800-919-1694</h1>
+            <div class="footer-options">
+                <div class="options">
+                    <a href="/">FAQ</a>
+                    <a href="/">Investor Relations</a>
+                    <a href="/">Privacy</a>
+                    <a href="/">Speed Test</a>
+                </div>
+                <div class="options">
+                    <a href="/">Help Centre</a>
+                    <a href="/">Jobs</a>
+                    <a href="/">Cookie Preferences</a>
+                    <a href="/">Legal Notifce</a>
+                </div>
+                <div class="options">
+                    <a href="/">Help Centre</a>
+                    <a href="/">Jobs</a>
+                    <a href="/">Cookie Preferences</a>
+                    <a href="/">Legal Notifce</a>
+                </div>
+            </div>
+
+            <div class="footer-country">
+                <h5>Netflix India</h5>
+            </div>
+
+
+        </div>
     </body>
 </html>
