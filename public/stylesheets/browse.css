@@ -7,7 +7,7 @@ body {
 
 .poster {
     background-image: url("/images/stranger_things.jpg");
-    height: 95vh;
+    height: 100vh;
 }
 
 .name-logo-desc {
@@ -20,14 +20,14 @@ body {
 
 .stranger-things-logo{
     position: absolute;
-    padding-left: 10px;
-    bottom: 200px;
-    width: 500px;
+    margin-left: -50px;
+    bottom: 250px;
+    width: 600px;
 }
 
 .heading-desc {
     position: absolute;
-    bottom: 70px;
+    bottom: 130px;
     width: 500px;
     margin-left: 50px;
     padding: 15px;
@@ -55,9 +55,6 @@ p {
     gap: 15px;
 }
 
-#play {
-
-}
 
 .button-play {
     display: flex;
@@ -146,4 +143,63 @@ p {
     position: absolute;
     padding-top: 10px;
     left: 127px;
+}
+
+#top-picks {
+    background-color: aqua;
+    display: flex;
+}
+
+
+.top-heading {
+    margin-top: -140px;
+    padding-left: 65px;
+    color: white;
+}
+
+.content-images{
+    padding-left: 65px;
+    display: flex;
+    gap: 8px;
+}
+
+.content-images img {
+    width: 200px;
+    border-radius: 2px;
+}
+
+.tv-heading {
+    padding-left: 65px;
+    color: white;
+}
+
+.footer {
+    padding-left: 305px;
+    padding-top: 20px;
+    background-color: transparent;
+    color: #b1b1b1
+}
+
+.footer-call {
+    font-size: 12px;
+}
+
+.footer-options {
+    margin-bottom: 50px;
+    padding-top: 35px;
+    display: flex;
+    gap: 150px
+}
+
+.footer-options .options a {
+    text-decoration: none;
+    display: block; /* Ensure each link is on a new line */
+    color: #b1b1b1; /* Add this if you want the links to be white */
+    margin-bottom: 15px; /* Optional: adds space between the links */
+    font-size: 12px;
+}
+
+.footer-country {
+    color: #b1b1b1;
+    height: 100px;
 }
