@@ -174,7 +174,7 @@ p {
 }
 
 .footer {
-    padding-left: 305px;
+    padding-left: 250px;
     padding-top: 20px;
     background-color: transparent;
     color: #b1b1b1
@@ -184,7 +184,20 @@ p {
     font-size: 12px;
 }
 
+.social {
+    margin-top: 100px;
+    display: flex;
+    gap:20px
+}
+
+.social a {
+    color: white;
+    text-decoration: none;
+    font-size: 26px;
+}
+
 .footer-options {
+    margin-top: 10px;
     margin-bottom: 50px;
     padding-top: 35px;
     display: flex;
@@ -200,6 +213,19 @@ p {
 }
 
 .footer-country {
-    color: #b1b1b1;
-    height: 100px;
+    margin-top: -35px;
+    display: flex;
+}
+
+.footer-button {
+    border: 1px solid gray;
+    background-color: transparent;
+    color: gray;
+    padding: 8px 10px;
+    font-size: 12px;
+}
+
+.copyright-text {
+    font-size: 10px;
+    color: gray;
 }
