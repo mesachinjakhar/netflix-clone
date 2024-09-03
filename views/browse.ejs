@@ -1,6 +1,54 @@
-extends layout
+<html>
+  <head>
+    <title>Home - Netflix</title>
+    <link rel="stylesheet" href="/stylesheets/browse.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
 
-block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+  <body>
+    <script src="/javascripts/browse_script.js"></script>
+    <div class="poster">
+      <div class="name-logo-desc">
+        <img class="stranger-things-logo" src="/images/LOGO1.png" alt="">
+        <div class="heading-desc">
+          <div class="heading">
+        <img class="top-10" src="https://www.netflix.com/tudum/top10/images/top10.png" alt="">
+        <h5>#1 in Movie Today</h5>
+      </div>
+      <p>Stranger Things is a sci-fi thriller where kids in a small town uncover dark secrets, supernatural forces, and a mysterious girl with powers, all while battling creatures from the Upside Down.</p>
+      <div class="buttons">
+        <button class="button-play">
+          <i id="play" class="bi bi-play-fill"></i>
+          Play</button>
+        <button class="button-more-info">
+          <i class="bi bi-info-circle"></i>
+          More Info</button>
+      </div>
+      </div>
+      </div>
+    <nav class="header">
+      <div class="logo">
+        <img class="netflix-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1597px-Netflix_2015_logo.svg.png?20190206123158" alt="">
+      </div>
+      <div class="menu">
+        <a href="">Home</a>
+        <a href="">TV Shows</a>
+        <a href="">Movies</a>
+        <a href="">New & Popular</a>
+        <a href="">My List</a>
+        <a href="">Browse by Languages</a>
+      </div>
+
+      <div class="left-side">
+        <div class="left-side-icons">
+        <a href="">
+          <i id="search-icon" class="bi bi-search"></i></a>
+        <a href=""><i id="notification-icon" class="bi bi-bell"></i></a>
+        <a href=""><img id="profile-icon" src="https://i.pinimg.com/564x/1b/a2/e6/1ba2e6d1d4874546c70c91f1024e17fb.jpg" alt=""></a>
+        <a href=""><i id="down-arrow" class="bi bi-caret-down-fill"></i></a>
+        </div>
+      </div>
+    </nav>
+    </div>
+  </body>
+</html>
