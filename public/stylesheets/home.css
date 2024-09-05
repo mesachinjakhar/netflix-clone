@@ -121,6 +121,7 @@ body {
   font-size: 26px;
   border-radius: 5px;
   padding-right: 25px;
+  cursor: pointer;
 }
 
 .decs1 {
