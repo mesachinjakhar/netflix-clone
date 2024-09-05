@@ -5,6 +5,10 @@ body {
     background-color: #141414;
 }
 
+img {
+    cursor: pointer;
+}
+
 .poster {
     background-image: url("/images/stranger_things.jpg");
     height: 100vh;
@@ -64,7 +68,12 @@ p {
     font-size: 20px;
     padding: 10px 25px;
     border-radius: 5px;
-} 
+    cursor: pointer;
+}
+
+.buttons a {
+    text-decoration: none;
+}
 
 .button-more-info {
     background-color: #515153;
