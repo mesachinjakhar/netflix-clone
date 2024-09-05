@@ -7,29 +7,12 @@
   <link rel="stylesheet" href="/stylesheets/watch.css">
 </head>
 <body>
+  <script src="/javascripts/watchScript.js"></script>
   <div class="video-container">
     <video id="videoPlayer" width="100%" controls autoplay>
       <source src="<%= videoUrl %>" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
-
-  <script>
-    window.addEventListener('load', function() {
-      const video = document.getElementById('videoPlayer');
-      
-      
-      if (video.requestFullscreen) {
-        video.requestFullscreen();
-      } else if (video.webkitRequestFullscreen) { 
-        video.webkitRequestFullscreen();
-      } else if (video.msRequestFullscreen) {
-        video.msRequestFullscreen();
-      }
-
-      
-      video.play();
-    });
-  </script>
 </body>
 </html>
