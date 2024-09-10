@@ -19,7 +19,6 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/browse', browseRouter);
@@ -30,10 +29,6 @@ app.use("/watch", watchRouter)
 app.use(function(req, res, next) {
   next(createError(404));
 });
-
-app.listen(3000, () => {
-  console.log("running");
-})
 
 // error handler
 app.use(function(err, req, res, next) {
