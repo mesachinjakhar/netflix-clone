@@ -1,8 +1,11 @@
+
 body {
     margin: 0;
     padding: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #141414;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
 }
 
 img {
@@ -11,10 +14,12 @@ img {
 
 .poster {
     background-image: url("/images/stranger_things.jpg");
-    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    background-size: cover;
 }
 
-.name-logo-desc {
+.name_logo_desc {
     color: white;
     display: block;
     width: 500px;
@@ -22,14 +27,14 @@ img {
     position: relative;
 }
 
-.stranger-things-logo{
+.stranger_things_logo{
     position: absolute;
     margin-left: -50px;
     bottom: 250px;
     width: 600px;
 }
 
-.heading-desc {
+.heading_desc {
     position: absolute;
     bottom: 130px;
     width: 500px;
@@ -60,7 +65,7 @@ p {
 }
 
 
-.button-play {
+.button_play {
     display: flex;
     justify-content: center;
     background-color: white;
@@ -75,7 +80,7 @@ p {
     text-decoration: none;
 }
 
-.button-more-info {
+.button_more_info {
     background-color: #515153;
     color: white;
     border: none;
@@ -84,9 +89,16 @@ p {
     padding: 10px 25px;
     border-radius: 5px;
 
-} 
+}
 
-.top-10 {
+.button_play:hover {
+    background-color: #e6e6e6;
+}
+.button_more_info:hover {
+    background-color: #6c6c6c;
+}
+
+.top_10 {
     width: 35px;
     height: 35px
 }
@@ -109,7 +121,7 @@ p {
     font-size: 13px;
 }
 
-.netflix-logo {
+.netflix_logo {
     width: 100px;
     padding-left: 40px;
 }
@@ -120,7 +132,7 @@ p {
     margin-left: 40px;
 }
 
-.left-side {
+.right_side {
     padding-top: 20px;
     display: flex;
     gap:25px;
@@ -129,55 +141,63 @@ p {
     text-align: center;
 }
 
-.left-side-icons {
+.right_side_icons {
     font-size: 20px;
     display: flex;
     gap: 25px;
 }
 
-#profile-icon {
+#profile_icon {
     width: 30px;
     border-radius: 3px;
 }
 
-#notification-icon {
+#notification_icon {
     font-size: 20px;
 }
 
-#search-icon{
+#search_icon{
     font-size: 20px;
 }
 
-#down-arrow {
+#down_arrow {
     position: absolute;
     padding-top: 10px;
     left: 127px;
 }
 
-#top-picks {
+#top_picks {
     background-color: aqua;
     display: flex;
 }
 
 
-.top-heading {
+.top_heading {
     margin-top: -140px;
     padding-left: 65px;
     color: white;
 }
 
-.content-images{
+.content_images{
     padding-left: 65px;
     display: flex;
     gap: 8px;
+    box-sizing: border-box;
+    overflow-x: auto;           /* Horizontal scrolling */
+    white-space: nowrap;   
 }
 
-.content-images img {
-    width: 200px;
-    border-radius: 2px;
+.content_images::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
 }
 
-.tv-heading {
+.content_images img {
+    width: 100%; /* Adjust width for small screens */
+    max-width: 200px; /* Prevents images from becoming too large */
+    height: auto;
+}
+
+.tv_heading {
     padding-left: 65px;
     color: white;
 }
@@ -187,10 +207,6 @@ p {
     padding-top: 20px;
     background-color: transparent;
     color: #b1b1b1
-}
-
-.footer-call {
-    font-size: 12px;
 }
 
 .social {
@@ -205,7 +221,7 @@ p {
     font-size: 26px;
 }
 
-.footer-options {
+.footer_options {
     margin-top: 10px;
     margin-bottom: 50px;
     padding-top: 35px;
@@ -213,7 +229,7 @@ p {
     gap: 150px
 }
 
-.footer-options .options a {
+.footer_options .options a {
     text-decoration: none;
     display: block; /* Ensure each link is on a new line */
     color: #b1b1b1; /* Add this if you want the links to be white */
@@ -221,12 +237,12 @@ p {
     font-size: 12px;
 }
 
-.footer-country {
+.footer_country {
     margin-top: -35px;
     display: flex;
 }
 
-.footer-button {
+.footer_button {
     border: 1px solid gray;
     background-color: transparent;
     color: gray;
@@ -234,7 +250,7 @@ p {
     font-size: 12px;
 }
 
-.copyright-text {
+.copyright_text {
     font-size: 10px;
     color: gray;
 }
